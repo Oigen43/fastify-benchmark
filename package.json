@@ -1,0 +1,29 @@
+{
+  "name": "fastify",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tap \"test/**/*.test.js\"",
+    "start": "NODE_ENV=production fastify start -p 8080 app.js",
+    "dev": "fastify start -w -l info -p 8080 -P app.js",
+    "benchmark": "node benchmark.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autocannon": "^7.6.0",
+    "fastify": "^3.0.0",
+    "fastify-autoload": "^3.10.0",
+    "fastify-cli": "^2.15.0",
+    "fastify-plugin": "^3.0.0",
+    "fastify-sensible": "^3.1.2"
+  },
+  "devDependencies": {
+    "tap": "^15.1.6"
+  }
+}
